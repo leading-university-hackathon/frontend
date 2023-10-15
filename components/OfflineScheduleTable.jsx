@@ -17,63 +17,49 @@ let offlineData = [
       day : "Sunday",
       checked : false,
       start_time : null,
-      end_time : null,
-      date : new Date(),
-      available_time : 0
+      end_time : null
     },
     {
       id : 2,
       day : "Monday",
       checked : false,
       start_time : null,
-      end_time : null,
-      date : new Date(),
-      available_time : 0
+      end_time : null
     },
     {
       id : 3,
       day : "Tuesday",
       checked : false,
       start_time : null,
-      end_time : null,
-      date : new Date(),
-      available_time : 0
+      end_time : null
     },
     {
       id : 4,
       day : "Wednesday",
       checked : false,
       start_time : null,
-      end_time : null,
-      date : new Date(),
-      available_time : 0
+      end_time : null
     },
     {
       id : 5,
       day : "Thursday",
       checked : false,
       start_time : null,
-      end_time : null,
-      date : new Date(),
-      available_time : 0
+      end_time : null
     },
     {
       id : 6,
       day : "Friday",
       checked : false,
       start_time : null,
-      end_time : null,
-      date : new Date(),
-      available_time : 0
+      end_time : null
     },
     {
       id : 7,
       day : "Saturday",
       checked : false,
       start_time : null,
-      end_time : null,
-      date : new Date(),
-      available_time : 0
+      end_time : null
     }
   ]
 export default function OfflineScheduleTable({ setOfflineSchedule }) {

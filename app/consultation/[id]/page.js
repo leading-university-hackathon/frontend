@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import React, { useEffect, useState } from "react"
 import { BsFillCameraVideoFill, BsHandIndex} from 'react-icons/bs' 
-import { TbCircleLetterH } from 'react-icons/tb'
 import { GiNotebook } from 'react-icons/gi' 
 import { HiOutlineLocationMarker } from 'react-icons/hi' 
 import { FaUserGraduate } from 'react-icons/fa' 
@@ -41,8 +40,6 @@ export default function page({ params }) {
       .then((res) => res.json())
       .then((data) => {
         setData(data)
-        console.log(data)
-        setLoading(false)
       })
   }, [])
 
@@ -180,7 +177,6 @@ export default function page({ params }) {
         {data &&
           <div className="p-8">
           <div className="flex space-x-2 items-center">
-            <div className="text-3xl bg-black text-white rounded-full"><TbCircleLetterH/></div>
             <h1>PROFILE</h1>
           </div>
           {data && <div className="flex items-center space-x-6">

@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link"
 import { useState } from "react"
 import { useRouter } from 'next/navigation'
 import OfflineScheduleTable from "@/components/OfflineScheduleTable"
@@ -101,17 +100,6 @@ export default function page() {
             <option value="rangpur">Rangpur</option>
             <option value="comilla">Comilla</option>
             <option value="mymensingh">Mymensingh</option>
-            <option value="coxsbazar">Cox's Bazar</option>
-            <option value="khagrachari">Khagrachari</option>
-            <option value="bogra">Bogra</option>
-            <option value="savar">Savar</option>
-            <option value="narayanganj">Narayanganj</option>
-            <option value="rangamati">Rangamati</option>
-            <option value="jamalpur">Jamalpur</option>
-            <option value="barishal">Barishal</option>
-            <option value="feni">Feni</option>
-            <option value="jessore">Jessore</option>
-            <option value="munshiganj">Munshiganj</option>
           </select>
         </div>
         <div className="w-full px-4 flex justify-start p-2 items-center">
@@ -138,14 +126,14 @@ export default function page() {
         <div className="w-full px-4 flex justify-start p-2 items-center">
             <input className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp" onChange={e => setDescription(e.target.value)} type="description" placeholder="Tell Us About Yourself and Your Qualities" value={description}/>
         </div>
-      <div className="my-16">
-        <h1 className="text-xl my-4 font-semibold">Tell us about your offline practice schedule : (You can change it later)</h1>
-        <OfflineScheduleTable setOfflineSchedule={setOfflineSchedule}/>
-      </div>
-      <div className="my-16">
-        <h1 className="text-xl my-4 font-semibold">Tell us about your online practice schedule : (You can change it later)</h1>
-        <OnlineScheduleTable setOnlineSchedule={setOnlineSchedule} />
-      </div>
+        <div className="my-16">
+          <h1 className="text-xl my-4 font-semibold">Tell us about your offline practice schedule</h1>
+          <OfflineScheduleTable setOfflineSchedule={setOfflineSchedule}/>
+        </div>
+        <div className="my-16">
+          <h1 className="text-xl my-4 font-semibold">Tell us about your online practice schedule</h1>
+          <OnlineScheduleTable setOnlineSchedule={setOnlineSchedule} />
+        </div>
       </div>
       
       <Button onClick={handleSubmit} className="rounded-lg flex items-center justify-center">{loading ? <span><Lottie className="flex w-16 items-center text-center justify-center" animationData={loader}/></span> : "Submit"}</Button>

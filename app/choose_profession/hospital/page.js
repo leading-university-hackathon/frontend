@@ -35,7 +35,7 @@ export default function page() {
       place : selectedCity
     }
     const endpoint = process.env.NEXT_PUBLIC_ENDPOINT
-    const response = await fetch(`${endpoint}/register/hospital`, {
+    const response = await fetch(`${endpoint}/hospital/signup`, {
       method: 'POST',
       headers : {'Content-Type': 'application/json'},
       body : JSON.stringify(data)
@@ -79,18 +79,6 @@ export default function page() {
             <option value="barisal">Barisal</option>
             <option value="rangpur">Rangpur</option>
             <option value="comilla">Comilla</option>
-            <option value="mymensingh">Mymensingh</option>
-            <option value="coxsbazar">Cox's Bazar</option>
-            <option value="khagrachari">Khagrachari</option>
-            <option value="bogra">Bogra</option>
-            <option value="savar">Savar</option>
-            <option value="narayanganj">Narayanganj</option>
-            <option value="rangamati">Rangamati</option>
-            <option value="jamalpur">Jamalpur</option>
-            <option value="barishal">Barishal</option>
-            <option value="feni">Feni</option>
-            <option value="jessore">Jessore</option>
-            <option value="munshiganj">Munshiganj</option>
           </select>
         </div>
         <div className="w-full px-4 flex justify-start p-2 items-center">
