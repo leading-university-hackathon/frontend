@@ -40,7 +40,7 @@ export default function Home() {
           <div className='flex w-full justify-between items-center p-16'>
             <div className='max-w-[644px]'>
               <h1  className={`${oswald.className} tracking-widest text-black text-6xl bg-clip-text p-6`}>MediNest</h1>
-              <h1 className={`${nunito.className} text-4xl font-bold bg-gradient-to-r from-[#a9e3fa] via-[#a970eb] to-[#d374ff] bg-clip-text text-transparent p-6`}>HealthCare, More Accessible Than Ever!</h1>
+              <h1 className={`${nunito.className} text-4xl font-bold bg-gradient-to-r from-[#2a393f] via-[#1d0d30] to-[#532369] bg-clip-text text-transparent p-6`}>HealthCare, More Accessible Than Ever!</h1>
               <h3 className='text-xl px-6 tracking-wide leading-7'>Welcome to our revolutionary healthcare platform, where Cutting-Edge Technology meets Compassionate Care. We believe in reimagining the way healthcare is delivered.Our team of expert doctors and healthcare professionals is dedicated to providing you with personalized and exceptional care.</h3>
               <div className='flex space-x-6 p-6 items-center'>
                 <h1 className='text-xl underline'>Discover your path to optimal health : </h1>
